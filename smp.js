@@ -32,8 +32,6 @@ function wPreferM1OverM(womanPref, w, m, m1) {
 }
 
 /**
- * menStableMariage callback
- *
  * @callback mspCallback
  * @param {number} men index 
  * @param {number} woman index
