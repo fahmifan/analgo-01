@@ -1,8 +1,5 @@
 #!/usr/bin/env node
 
-const women = ['amy', 'bertha', 'clare', 'diane', 'erika']
-const men = ['victor', 'wyatt', 'xavier', 'yancey', 'zeus']
-
 /**
  * Init value for a 1D array
  * @param {number} len length of the array
@@ -55,7 +52,7 @@ function wPreferM1OverM(womanPref, w, m, m1) {
  */
 exports.menStableMariage = (menPref, womanPref, callback = () => {}) => {
     // length of array
-    const N = men.length;
+    const N = menPref.length;
 
     // pickedWoman index is index of `men`, 
     // it's value is an index tha will increment to indicate last picked woman 
@@ -67,10 +64,10 @@ exports.menStableMariage = (menPref, womanPref, callback = () => {}) => {
     // value -1 means the man is free else it's the `women` index
     const menCouple = initArray(N, -1);
 
+    // pick first free man `m`
+    let m = menCouple.indexOf(-1);
     // while there is a free man
-    while(menCouple.indexOf(-1) !== -1) {
-        // pick first free man `m`
-        let m = menCouple.indexOf(-1);
+    while(m !== -1) {
         // w is the most preferable woman that hasn't been picked before
         let w = menPref[m][pickedWoman[m]];
 
@@ -93,8 +90,9 @@ exports.menStableMariage = (menPref, womanPref, callback = () => {}) => {
                 menCouple[m] = w;
             }
         }
-
+        
         callback(m, w, menCouple);
+        m = menCouple.indexOf(-1);
     }
     return menCouple;
 }
