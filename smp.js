@@ -1,6 +1,12 @@
 #!/usr/bin/env node
 
 /**
+ * @author Fahmi Irfan <fahmifan173@gmail.com>
+ * npm : 14081016028
+ * year: 2019
+ */
+
+/**
  * Init value for a 1D array
  * @param {number} len length of the array
  * @param {any} initVal value to assign to each array
