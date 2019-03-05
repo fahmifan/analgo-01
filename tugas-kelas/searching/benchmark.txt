@@ -1,0 +1,40 @@
+
+>>> search 4 in 10 numbers.
+binarySearch: 0.375ms
+linearSearch: 0.160ms
+
+>>> search 31 in 50 numbers.
+binarySearch: 0.024ms
+linearSearch: 0.039ms
+
+>>> search 3 in 100 numbers.
+binarySearch: 0.017ms
+linearSearch: 0.024ms
+
+>>> search 64 in 200 numbers.
+binarySearch: 0.021ms
+linearSearch: 0.028ms
+
+>>> search 73 in 300 numbers.
+binarySearch: 0.020ms
+linearSearch: 0.038ms
+
+>>> search 320 in 500 numbers.
+binarySearch: 0.025ms
+linearSearch: 0.022ms
+
+>>> search 48 in 999 numbers.
+binarySearch: 0.023ms
+linearSearch: 0.108ms
+
+>>> search 1227 in 2000 numbers.
+binarySearch: 0.024ms
+linearSearch: 0.209ms
+
+>>> search 570 in 10000 numbers.
+binarySearch: 0.028ms
+linearSearch: 0.011ms
+
+>>> search 28592 in 100000 numbers.
+binarySearch: 0.019ms
+linearSearch: 0.395ms
