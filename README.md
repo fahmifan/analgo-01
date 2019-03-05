@@ -1,4 +1,4 @@
-# Moudl 1 Analisis Algortima
+# Modul 1 Analisis Algortima
 # Pertanyaan
 1. Apakah jawaban anda di Worksheet 1 sama persis dengan di program ?
   - Ya, sama
