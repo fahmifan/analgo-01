@@ -1,0 +1,15 @@
+
+array 10
+merge-sort: 8.044ms
+
+array 50
+merge-sort: 8.718ms
+
+array 100
+merge-sort: 4.798ms
+
+array 200
+merge-sort: 4.376ms
+
+array 500
+merge-sort: 4.039ms

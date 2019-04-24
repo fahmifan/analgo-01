@@ -26,7 +26,7 @@ function main() {
   const lableLoop = 'loop';
   const lableRecur = 'recursive';
 
-  for (let i = 0; i <= 200; i += 10) {
+  for (let i = 0; i < 64; i += 1) {
     console.log(`\n>>> 2^${i}`);
 
     console.time(lableLoop);
